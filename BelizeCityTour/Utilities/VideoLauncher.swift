@@ -228,7 +228,7 @@ class VideoLauncher: NSObject {
             }, completion: { (completedAnimation) in
                 //hide status bar
 //                UIApplication.shared.setStatusBarHidden(true, with: .fade)
-                UIApplication.shared.isStatusBarHidden = true
+//                UIApplication.shared.isStatusBarHidden = true
                 
             })
         }
