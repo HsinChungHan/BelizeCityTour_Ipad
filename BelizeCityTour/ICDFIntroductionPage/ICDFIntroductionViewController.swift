@@ -18,6 +18,7 @@ class ICDFIntroductionViewController: UIViewController {
         let blankView = UIView(frame: .zero)
         tv.tableFooterView = blankView
         tv.headerView.delegate = self
+        tv.icdfTableViewDelegate = self
         return tv
     }()
     override func viewDidLoad() {
@@ -35,9 +36,20 @@ extension ICDFIntroductionViewController: TableHeaderViewDelegate{
         present(naviVC, animated: true, completion: nil)
     }
     
-    func goToCultureWebsite(sender: UIImageView) {
-        guard let url = URL(string: "http://tourism.gov.bz") else {return}
-        let naviVC = UINavigationController(rootViewController: WebViewController(url: url))
-        present(naviVC, animated: true, completion: nil)
+//    func goToCultureWebsite(sender: UIImageView) {
+//        guard let url = URL(string: "http://tourism.gov.bz") else {return}
+//        let naviVC = UINavigationController(rootViewController: WebViewController(url: url))
+//        present(naviVC, animated: true, completion: nil)
+//    }
+}
+
+
+extension ICDFIntroductionViewController: ICDFTableViewProtocol{
+    func goToICDFVideo(sender: UIImageView) {
+        guard let icdfVideoUrl = URL(string: "https://www.youtube.com/watch?v=OsGXuI6woHA&feature=youtu.be") else{return}
+        let naviController = UINavigationController.init(rootViewController: WebViewController.init(url: icdfVideoUrl))
+        present(naviController, animated: true, completion: nil)
     }
+    
+    
 }

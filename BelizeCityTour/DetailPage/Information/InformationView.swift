@@ -9,19 +9,19 @@
 import UIKit
 let textBrownColor = UIColor.rgb(red: 132, green: 94, blue: 85)
 
-protocol InformationViewDelegate {
-    func goToWebSite(sender: UIButton, url: URL)
-}
+//protocol InformationViewDelegate {
+//    func goToWebSite(sender: UIButton, url: URL)
+//}
 
 
 class InformationView: UIView {
-    var delegate: InformationViewDelegate?
+//    var delegate: InformationViewDelegate?
     init(image: UIImage, title: String, subTitle: String, isWebsite: Bool){
         super.init(frame: .zero)
         iconImgView.image = image
         titleLabel.text = title
         subTitleLabel.text = subTitle
-        websiteButton.setTitle(subTitle, for: .normal)
+//        websiteButton.setTitle(subTitle, for: .normal)
         setupViews(isWebsite: isWebsite)
     }
     
@@ -53,19 +53,19 @@ class InformationView: UIView {
         return label
     }()
     
-    lazy var websiteButton: UIButton = {
-        let btn = UIButton(type: .system)
-        btn.setTitleColor(UIColor.systemBlue, for: .normal)
-        btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: -50, bottom: 0, right: 0)
-        btn.addTarget(self, action: #selector(goToWebsite(sender:)), for: .touchUpInside)
-        btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-        return btn
-    }()
-    
-    @objc func goToWebsite(sender: UIButton){
-        guard let url = URL(string: sender.title(for: .normal)!)  else {return}
-        delegate?.goToWebSite(sender: sender, url: url)
-    }
+//    lazy var websiteButton: UIButton = {
+//        let btn = UIButton(type: .system)
+//        btn.setTitleColor(UIColor.systemBlue, for: .normal)
+//        btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: -50, bottom: 0, right: 0)
+//        btn.addTarget(self, action: #selector(goToWebsite(sender:)), for: .touchUpInside)
+//        btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+//        return btn
+//    }()
+//
+//    @objc func goToWebsite(sender: UIButton){
+//        guard let url = URL(string: sender.title(for: .normal)!)  else {return}
+//        delegate?.goToWebSite(sender: sender, url: url)
+//    }
     
     fileprivate func setupViews(isWebsite: Bool) {
         backgroundColor = .clear
@@ -77,15 +77,16 @@ class InformationView: UIView {
         titleLabel.centerYAnchor.constraint(equalTo: iconImgView.centerYAnchor).isActive = true
         titleLabel.anchor(top: topAnchor, bottom: bottomAnchor, left: iconImgView.rightAnchor, right: nil, topPadding: 0, bottomPadding: 0, leftPadding: 10, rightPadding: 0, width: 130, height: 0)
         
+        addSubview(subTitleLabel)
+        subTitleLabel.anchor(top: titleLabel.topAnchor, bottom: titleLabel.bottomAnchor, left: titleLabel.rightAnchor, right: rightAnchor, topPadding: 0, bottomPadding: 0, leftPadding: 10, rightPadding: 0, width: 0, height: 0)
         
-        
-        if isWebsite{
-            addSubview(websiteButton)
-            websiteButton.anchor(top: titleLabel.topAnchor, bottom: titleLabel.bottomAnchor, left: titleLabel.rightAnchor, right: rightAnchor, topPadding: 0, bottomPadding: 0, leftPadding: 10, rightPadding: 0, width: 0, height: 0)
-        }else{
-            addSubview(subTitleLabel)
-            subTitleLabel.anchor(top: titleLabel.topAnchor, bottom: titleLabel.bottomAnchor, left: titleLabel.rightAnchor, right: rightAnchor, topPadding: 0, bottomPadding: 0, leftPadding: 10, rightPadding: 0, width: 0, height: 0)
-        }
+//        if isWebsite{
+//            addSubview(websiteButton)
+//            websiteButton.anchor(top: titleLabel.topAnchor, bottom: titleLabel.bottomAnchor, left: titleLabel.rightAnchor, right: rightAnchor, topPadding: 0, bottomPadding: 0, leftPadding: 10, rightPadding: 0, width: 0, height: 0)
+//        }else{
+//            addSubview(subTitleLabel)
+//            subTitleLabel.anchor(top: titleLabel.topAnchor, bottom: titleLabel.bottomAnchor, left: titleLabel.rightAnchor, right: rightAnchor, topPadding: 0, bottomPadding: 0, leftPadding: 10, rightPadding: 0, width: 0, height: 0)
+//        }
         
     }
 }

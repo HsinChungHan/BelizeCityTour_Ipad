@@ -9,13 +9,8 @@
 import UIKit
 
 class CustomLabel: UILabel {
-
     var insetEdge:UIEdgeInsets!
-    
     override func drawText(in rect: CGRect) {
         super.drawText(in: rect.inset(by: insetEdge))
-        
-
     }
-
 }

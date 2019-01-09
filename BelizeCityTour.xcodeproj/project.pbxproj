@@ -88,6 +88,7 @@
 		C06E3DB321DC8CCD00B9ED43 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E3DAE21DC8CCD00B9ED43 /* UIStackViewExtension.swift */; };
 		C06E3DB621DC8D5F00B9ED43 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E3DB521DC8D5F00B9ED43 /* CardCollectionViewCell.swift */; };
 		C09CC91E21CE2DD80087B411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CC91D21CE2DD80087B411 /* AppDelegate.swift */; };
+		C0E02C8621E59AAE006EA5D6 /* TaiwanICDF.gif in Resources */ = {isa = PBXBuildFile; fileRef = C0E02C8521E59AAE006EA5D6 /* TaiwanICDF.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -177,6 +178,7 @@
 		C09CC91A21CE2DD80087B411 /* BelizeCityTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BelizeCityTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C09CC91D21CE2DD80087B411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C09CC92721CE2DD90087B411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0E02C8521E59AAE006EA5D6 /* TaiwanICDF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TaiwanICDF.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 			children = (
 				C06E3D9621DA18E000B9ED43 /* Fonts */,
 				C031D32321CE36D800B563B0 /* intro.mp4 */,
+				C0E02C8521E59AAE006EA5D6 /* TaiwanICDF.gif */,
 				C031D31B21CE313F00B563B0 /* backgroundMusic.mp3 */,
 				C031D2E421CE2FB800B563B0 /* Assets.xcassets */,
 				C09CC92721CE2DD90087B411 /* Info.plist */,
@@ -511,6 +514,7 @@
 				C06E3D9821DA18FD00B9ED43 /* VINERITC.TTF in Resources */,
 				C068D72721DCBCB0003254B4 /* LaunchScreen.storyboard in Resources */,
 				C031D2E521CE2FB900B563B0 /* Assets.xcassets in Resources */,
+				C0E02C8621E59AAE006EA5D6 /* TaiwanICDF.gif in Resources */,
 				C031D31C21CE313F00B563B0 /* backgroundMusic.mp3 in Resources */,
 				C06E3DA621DC8B2500B9ED43 /* Localizable.strings in Resources */,
 				C06E3D2B21D3340700B9ED43 /* AllPlaces.json in Resources */,
