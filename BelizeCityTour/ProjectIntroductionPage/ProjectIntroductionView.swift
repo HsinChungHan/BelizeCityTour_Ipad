@@ -109,7 +109,10 @@ class ProjectIntroductionView: UIView {
         guard let url = URL(string: "http://www.icdf.org.tw/mp.asp?mp=2") else {return}
         let naviVC = UINavigationController(rootViewController: WebViewController.init(url: url))
         delegate?.goToWebsite(sender: sender, destinationNavivc: naviVC)
+//        isGoToICDFWebsitePressed = true
     }
+    
+//    @objc dynamic var isGoToICDFWebsitePressed: Bool = false
     
     let collectionView = ProjectCollectionView()
     

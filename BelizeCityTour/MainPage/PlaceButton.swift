@@ -8,30 +8,30 @@
 
 import UIKit
 protocol PlaceButtonDelegate {
-    func buttonTap(sender: PlaceButton, place: Place)
+  func buttonTap(sender: PlaceButton, place: Place)
 }
 
 
 class PlaceButton: UIButton {
-    var delegate: PlaceButtonDelegate?
-    var place: Place
-    
-    init(index: Int, place: Place) {
-        self.place = place
-        super.init(frame: CGRect(x: place.iconLocation.x , y: place.iconLocation.y, width: 135, height: 135))
-        tag = index
-        imageView?.contentMode = .scaleAspectFit
-        setImage(UIImage(named: place.iconImg)!.withRenderingMode(.alwaysOriginal), for: .normal)
-        addTarget(self, action: #selector(handelPlaceButtnTap(sender:)), for: .touchUpInside)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    @objc func handelPlaceButtnTap(sender: PlaceButton){
-        delegate?.buttonTap(sender: sender, place: place)
-    }
-    
-    
+  var delegate: PlaceButtonDelegate?
+  var place: Place
+  
+  init(index: Int, place: Place) {
+    self.place = place
+    super.init(frame: CGRect(x: place.iconLocation.x , y: place.iconLocation.y, width: 135, height: 135))
+    tag = index
+    imageView?.contentMode = .scaleAspectFit
+    setImage(UIImage(named: place.iconImg)!.withRenderingMode(.alwaysOriginal), for: .normal)
+    addTarget(self, action: #selector(handelPlaceButtnTap(sender:)), for: .touchUpInside)
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+  
+  @objc func handelPlaceButtnTap(sender: PlaceButton){
+    delegate?.buttonTap(sender: sender, place: place)
+  }
+  
+  
 }

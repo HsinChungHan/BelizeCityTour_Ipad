@@ -9,6 +9,11 @@
 import Foundation
 
 import UIKit
+enum originalDimension: CGFloat{
+    case height = 1112
+    case width = 834
+}
+
 enum HeightConstant: CGFloat {
     case plcacImgView = 500
     case sectionHaderView = 150

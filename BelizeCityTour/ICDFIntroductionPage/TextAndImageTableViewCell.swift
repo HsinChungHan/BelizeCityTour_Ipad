@@ -20,7 +20,7 @@ class TextAndImageTableViewCell: TextOnlyTableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    var paragraphView: ParagraphView?
+    @objc dynamic var paragraphView: ParagraphView?
     var values: (upperColor: UIColor, lowerColor: UIColor, image: UIImage?, paragraphText: String)?{
         didSet{
             paragraphView = ParagraphView.init(upperColor: (values?.upperColor)!, lowerColor: (values?.lowerColor)!, image: (values?.image)!)

@@ -65,5 +65,8 @@ class ParagraphView: UIView {
     
      @objc func goToICDFVideo(sender: UIImageView){
         delegate?.goToICDFVideo(sender: sender)
+        isGoToICDFWebsite = true
     }
+    
+    @objc dynamic var isGoToICDFWebsite: Bool = false
 }

@@ -35,7 +35,6 @@
 		C031D31721CE301900B563B0 /* CustomInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031D31521CE301900B563B0 /* CustomInteractionController.swift */; };
 		C031D31C21CE313F00B563B0 /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C031D31B21CE313F00B563B0 /* backgroundMusic.mp3 */; };
 		C031D32221CE328B00B563B0 /* SkipButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031D32121CE328A00B563B0 /* SkipButtonView.swift */; };
-		C031D32421CE36D900B563B0 /* intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C031D32321CE36D800B563B0 /* intro.mp4 */; };
 		C068D71C21DC9FBC003254B4 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C068D71B21DC9FBC003254B4 /* GuideView.swift */; };
 		C068D71E21DCA97F003254B4 /* DirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C068D71D21DCA97F003254B4 /* DirectionView.swift */; };
 		C068D72721DCBCB0003254B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C068D72921DCBCB0003254B4 /* LaunchScreen.storyboard */; };
@@ -89,6 +88,8 @@
 		C06E3DB621DC8D5F00B9ED43 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E3DB521DC8D5F00B9ED43 /* CardCollectionViewCell.swift */; };
 		C09CC91E21CE2DD80087B411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CC91D21CE2DD80087B411 /* AppDelegate.swift */; };
 		C0E02C8621E59AAE006EA5D6 /* TaiwanICDF.gif in Resources */ = {isa = PBXBuildFile; fileRef = C0E02C8521E59AAE006EA5D6 /* TaiwanICDF.gif */; };
+		D1A98B9E230191C8007B7506 /* intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D1A98B9D230191C8007B7506 /* intro.mp4 */; };
+		D1B99D8F2289D09C0087DB2A /* UserDefault_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B99D8E2289D09C0087DB2A /* UserDefault_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,7 +121,6 @@
 		C031D31521CE301900B563B0 /* CustomInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInteractionController.swift; sourceTree = "<group>"; };
 		C031D31B21CE313F00B563B0 /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
 		C031D32121CE328A00B563B0 /* SkipButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipButtonView.swift; sourceTree = "<group>"; };
-		C031D32321CE36D800B563B0 /* intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro.mp4; sourceTree = "<group>"; };
 		C068D71B21DC9FBC003254B4 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		C068D71D21DCA97F003254B4 /* DirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionView.swift; sourceTree = "<group>"; };
 		C068D72821DCBCB0003254B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -179,6 +179,8 @@
 		C09CC91D21CE2DD80087B411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C09CC92721CE2DD90087B411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0E02C8521E59AAE006EA5D6 /* TaiwanICDF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TaiwanICDF.gif; sourceTree = "<group>"; };
+		D1A98B9D230191C8007B7506 /* intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro.mp4; sourceTree = "<group>"; };
+		D1B99D8E2289D09C0087DB2A /* UserDefault_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 				C031D31421CE301900B563B0 /* CustomNavigationAnimationController.swift */,
 				C06E3D9221DA052600B9ED43 /* UILabel_Extension.swift */,
 				C06E3DA121DB886300B9ED43 /* UIVIewController_Extension.swift */,
+				D1B99D8E2289D09C0087DB2A /* UserDefault_Extension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -243,8 +246,8 @@
 		C031D31F21CE319B00B563B0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D1A98B9D230191C8007B7506 /* intro.mp4 */,
 				C06E3D9621DA18E000B9ED43 /* Fonts */,
-				C031D32321CE36D800B563B0 /* intro.mp4 */,
 				C0E02C8521E59AAE006EA5D6 /* TaiwanICDF.gif */,
 				C031D31B21CE313F00B563B0 /* backgroundMusic.mp3 */,
 				C031D2E421CE2FB800B563B0 /* Assets.xcassets */,
@@ -445,9 +448,17 @@
 				C06E3D5D21D5E15400B9ED43 /* DetailPage */,
 				C031D31A21CE30A100B563B0 /* Utilities */,
 				C031D31F21CE319B00B563B0 /* Resources */,
-				C06E3D9F21DB858E00B9ED43 /* WebViewController.swift */,
+				D17C8BCA23330EE1006D7EC0 /* WebView */,
 			);
 			path = BelizeCityTour;
+			sourceTree = "<group>";
+		};
+		D17C8BCA23330EE1006D7EC0 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				C06E3D9F21DB858E00B9ED43 /* WebViewController.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,7 +520,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C031D32421CE36D900B563B0 /* intro.mp4 in Resources */,
 				C06E3D9A21DA1AF600B9ED43 /* CENTAUR.ttf in Resources */,
 				C06E3D9821DA18FD00B9ED43 /* VINERITC.TTF in Resources */,
 				C068D72721DCBCB0003254B4 /* LaunchScreen.storyboard in Resources */,
@@ -520,6 +530,7 @@
 				C06E3D2B21D3340700B9ED43 /* AllPlaces.json in Resources */,
 				C06E3D2C21D3340700B9ED43 /* BelizeCulture.json in Resources */,
 				C06E3D9E21DA9D8500B9ED43 /* FranklinGothic-Demi.TTF in Resources */,
+				D1A98B9E230191C8007B7506 /* intro.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +571,7 @@
 				C06E3D8F21D946EA00B9ED43 /* ProjectCollectionView.swift in Sources */,
 				C031D30221CE2FF700B563B0 /* UIViewExtension.swift in Sources */,
 				C031D2FB21CE2FF700B563B0 /* VideoLauncher.swift in Sources */,
+				D1B99D8F2289D09C0087DB2A /* UserDefault_Extension.swift in Sources */,
 				C068D71E21DCA97F003254B4 /* DirectionView.swift in Sources */,
 				C06E3D5C21D4FC7000B9ED43 /* ScrollingView+UICollectionViewDelegate.swift in Sources */,
 				C06E3D3121D33C9000B9ED43 /* PlaceButton.swift in Sources */,

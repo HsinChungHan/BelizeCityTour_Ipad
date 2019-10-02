@@ -46,6 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = WelcomeViewController()
 //        window?.rootViewController = ProjectIntroductionViewController()
         Thread.sleep(forTimeInterval: 1.5)
+        print("width: \(UIScreen.main.bounds.width)")
+        print("height: \(UIScreen.main.bounds.height)")
         return true
     }
     
@@ -61,4 +63,6 @@ extension AppDelegate{
         }
         AppDelegate.backgroundMusicPlayer?.play()
     }
+    
+   
 }

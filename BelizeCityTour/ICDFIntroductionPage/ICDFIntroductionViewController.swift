@@ -21,6 +21,7 @@ class ICDFIntroductionViewController: UIViewController {
         tv.icdfTableViewDelegate = self
         return tv
     }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)

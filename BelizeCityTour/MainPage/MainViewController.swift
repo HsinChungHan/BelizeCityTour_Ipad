@@ -24,17 +24,28 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupMainView()
+        setHadOpened()
+    }
+
+    fileprivate func setGuideView() {
         view.addSubview(guideView)
         guideView.fullAnchor(superView: view)
     }
-
+    
+    fileprivate func setHadOpened(){
+        guard let _ = DB[.hadOpened] as? Bool else {
+            DB.set(true, forKey: "hadOpened")
+            setGuideView()
+            return
+        }
+        mainView.setupPersonImageView()
+    }
 }
 
 extension MainViewController{
     fileprivate func setupMainView(){
         view.addSubview(mainView)
         mainView.fullAnchor(superView: view)
-        
     }
 }
 
